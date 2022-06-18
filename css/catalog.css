@@ -1,0 +1,140 @@
+/* Файл стилей для catalog.html */
+
+.flex-init {
+	display: flex;
+	align-items: flex-start;
+	margin-top: 1.125rem;
+}
+
+.chapter {
+	max-width: 22.625rem;
+	background: #FFFAFA;
+	border: 0.0625rem solid #000000;
+	box-shadow: 10px 10px 14px rgba(0, 0, 0, 0.25);
+	border-radius: 0px 10px;
+}
+
+.chapter__items {
+	padding: 1.25rem 0.8125rem;
+	display: flex;
+	flex-direction: column;
+}
+
+.chapter__item {
+	display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    min-width: 15rem;
+    min-height: 2.5rem;
+    font-weight: 500;
+    font-size: 1.0625rem;
+    line-height: 110%;
+    color: #FFFAFA;
+    background: #426EDF;
+    border: 0.0625rem solid #426EDF;
+    border-radius: 0.625rem;
+    margin-bottom: 0.75rem;
+    transition: 0.2s;
+}
+
+.chapter__item:hover {
+	background-color: #fff;
+	color: #000;
+}
+
+.catalog {
+	margin-left: 4.6875rem;
+	max-width: 38.75rem;
+}
+
+.catalog__title {
+	text-align: center;
+}
+
+.catalog__items {
+	margin-top: 1.125rem;
+	display: flex;
+	flex-wrap: wrap;
+	flex: 1 1 25%;
+}
+
+.catalog__item {
+	max-width: 10.625rem;
+    min-height: 12.875rem;
+	background-color: #FCF7F7;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding: 1.25rem 1rem 0.4375rem;
+	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+	border-radius: 1.875rem;
+	margin-bottom: 1.5rem;
+}
+
+.catalog__item {
+	margin-right: 1.5rem;
+}
+
+
+.catalog__img {
+	max-width: 6.4375rem;
+    max-height: 6.4375rem;
+    border-radius: 1.25rem;
+}
+
+.catalog__tovar-title {
+	font-size: 0.9375rem;
+	font-weight: 500;
+}
+
+.catalog__price {
+	color: #A19C9C;
+	font-weight: 700;
+	font-size: 0.8125rem;
+	padding-top: 0.125rem;
+}
+
+.catalog__button {
+	margin-top: 0.5625rem;
+	background: #6966F0;
+	border: 0.0625rem solid #6966F0;
+	border-radius: 0.625rem;
+	color: #fff;
+	min-width: 9.3125rem;
+	min-height: 1.875rem;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-weight: 500;
+	line-height: 110%;
+	font-size: 0.9375rem;
+	transition: 0.2s;
+}
+
+.catalog__button:hover {
+	background-color: #fff;
+	color: #000;
+}
+
+
+/* MEDIA */
+@media (max-width: 925px) {
+	.chapter {
+		display: none;
+	}
+	.catalog {
+		margin-left: 0;
+		max-width: 100%;
+	}
+	.catalog__items {
+		justify-content: center;
+	}
+}
+
+
+@media (max-width: 387px) {
+	.catalog__item {
+		margin-left: 1.5rem;
+	}
+}
